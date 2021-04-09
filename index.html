@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eFood</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+    <div class="container">
+        <img src="img/logo.png" height="50px;" width="auto;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" style="font-weight: bold" href="all_restaurants.html">All Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <button class="btn btn-danger" type="button">Get started</button>
+        </form>
+    </div>
+</nav>
+
+<br><br><br>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="img/burger.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000"
+                 loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Are you hungry? Order now!</h1>
+            <form class="p-5 border rounded-3 bg-light">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="?">
+                    <label for="floatingInput">What's your address?</label>
+                </div>
+                <a href="#">Use current location</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="container col-xxl-8 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Restaurants near me</h2>
+
+    <div class="row flex-lg-row align-items-stretch py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                 style="background-image: url('img/chinese.jpeg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Chinese restaurant <i>Panda</i></h2>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                 style="background-image: url('img/pizza.jpeg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Italian restaurant <i>Toscana</i></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                 style="background-image: url('img/fastfood.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fast food restaurant <i>Foody</i></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-6 col-md">
+                <h4>Do more with apps</h4>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Android</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">iOS</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h4>Couldn't meet your needs?</h4>
+                <br>
+                <button class="btn btn-primary" type="button">See all restaurants</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">E-Food Copyright &copy; 2021</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

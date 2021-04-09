@@ -1,0 +1,62 @@
+body {
+}
+
+.container {
+    height: 100vh
+}
+
+.card {
+    width: 100%;
+    padding: 30px
+}
+
+.form {
+    padding: 20px
+}
+
+.form-control {
+    height: 50px;
+    background-color: #eee
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: dodgerblue;
+    outline: 0;
+    box-shadow: none;
+    background-color: #eee
+}
+
+.inputbox {
+    margin-bottom: 15px
+}
+
+.register {
+    width: 200px;
+    height: 51px;
+    background-color: dodgerblue;
+    border-color: dodgerblue
+}
+
+.register:hover {
+    width: 200px;
+    height: 51px;
+    background-color: dodgerblue;
+    border-color: dodgerblue
+}
+
+.login {
+    color: dodgerblue;
+    text-decoration: none
+}
+
+.login:hover {
+    color: dodgerblue;
+    text-decoration: none
+}
+
+.form-check-input:checked {
+    background-color: dodgerblue;
+    border-color: dodgerblue
+}

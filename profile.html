@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+
+    <div class="container">
+        <img src="img/logo.png" height="50px;" width="auto;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" style="font-weight: bold" href="#">All Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br><br><br>
+<br><br><br>
+
+<div class="container card col-xxl-8 py-5">
+    <p class="h1">My profile</p><br>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="your@email.com" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="InputPassword" placeholder="**********" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Firstname Lastname" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="birthday" class="form-label">Birth date</label>
+            <input type="date" class="form-control" id="birthday" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="032563999" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Address 1, 20000" disabled>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit data</button>
+    </form>
+</div>
+<div class="container col-xxl-8 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Previous orders</h2>
+
+    <div class="row row-cols-3 align-items-stretch py-5">
+        <div class="col">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Chinese restaurant <i>Panda</i></h5>
+                    <p class="card-text"><small class="text-muted">March 22, 2021</small></p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Order items
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Second product</h6>
+                                        </div>
+                                        <span class="text-muted">$8</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Third item</h6>
+                                        </div>
+                                        <span class="text-muted">$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <div class="text-success">
+                                            <h6 class="my-0">Promo code used</h6>
+                                            <small>EXAMPLECODE</small>
+                                        </div>
+                                        <span class="text-success">−$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Total (USD)</span>
+                                        <strong>$20</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="#" class="btn btn-primary me-md-2">Order again</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Italian restaurant <i>Toscana</i></h5>
+                    <p class="card-text"><small class="text-muted">March 3, 2021</small></p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Order items
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Second product</h6>
+                                        </div>
+                                        <span class="text-muted">$8</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Third item</h6>
+                                        </div>
+                                        <span class="text-muted">$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <div class="text-success">
+                                            <h6 class="my-0">Promo code used</h6>
+                                            <small>EXAMPLECODE</small>
+                                        </div>
+                                        <span class="text-success">−$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Total (USD)</span>
+                                        <strong>$20</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="#" class="btn btn-primary me-md-2">Order again</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Fast food restaurant <i>Foody</i></h5>
+                    <p class="card-text"><small class="text-muted">February 7, 2021</small></p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Order items
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Second product</h6>
+                                        </div>
+                                        <span class="text-muted">$8</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Third item</h6>
+                                        </div>
+                                        <span class="text-muted">$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <div class="text-success">
+                                            <h6 class="my-0">Promo code used</h6>
+                                            <small>EXAMPLECODE</small>
+                                        </div>
+                                        <span class="text-success">−$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Total (USD)</span>
+                                        <strong>$20</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="#" class="btn btn-primary me-md-2">Order again</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<br><br><br>
+<br>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">E-Food Copyright &copy; 2021</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
